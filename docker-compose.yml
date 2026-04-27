@@ -37,8 +37,6 @@ services:
     container_name: hng-detector
     volumes:
       - HNG-nginx-logs:/var/log/nginx:ro       # read-only mount
-    ports:
-      - "8080:8080"                            # dashboard UI
     depends_on:
       - nginx
     restart: unless-stopped

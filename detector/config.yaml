@@ -24,7 +24,7 @@ unban_schedule:
   - permanent
 
 # Slack
-slack_webhook_url: "https://hooks.slack.com/services/YOUR/WEBHOOK/URL"
+slack_webhook_url: "SLACK_WEBHOOK_URL"
 
 # Dashboard
 dashboard_port: 8080
