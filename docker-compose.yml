@@ -35,10 +35,13 @@ services:
       context: ./detector
       dockerfile: Dockerfile
     container_name: hng-detector
+    network_mode: host
+    cap_add:
+      - NET_ADMIN        # gives iptables permission inside container
+    privileged: true     # fallback if cap_add isn't enough
     volumes:
       - HNG-nginx-logs:/var/log/nginx:ro       # read-only mount
     depends_on:
       - nginx
     restart: unless-stopped
     # needs host network access for iptables (on the real server)
-    network_mode: host                         # override on EC2 only
