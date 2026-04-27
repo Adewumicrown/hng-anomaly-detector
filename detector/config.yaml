@@ -31,4 +31,4 @@ dashboard_port: 8080
 dashboard_refresh_seconds: 3
 
 # Audit log
-audit_log_path: /var/log/nginx/hng-audit.log
+audit_log_path: /app/hng-audit.log
