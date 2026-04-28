@@ -35,6 +35,7 @@ services:
       context: ./detector
       dockerfile: Dockerfile
     container_name: hng-detector
+    user: root
     network_mode: host
     cap_add:
       - NET_ADMIN        # gives iptables permission inside container
