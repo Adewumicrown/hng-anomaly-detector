@@ -8,7 +8,7 @@ A real-time DDoS detection and mitigation daemon built for [cloud.ng](https://cl
 
 | Resource | URL |
 |---|---|
-| **Metrics Dashboard** | http://3.144.234.143:8080 |
+| **Metrics Dashboard** | http://hngvictor0.duckdns.org:8080/ |
 | **Server IP** | 3.144.234.143 |
 
 > Nextcloud is accessible by IP only: http://3.144.234.143
